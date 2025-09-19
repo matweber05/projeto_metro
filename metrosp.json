@@ -1,0 +1,191 @@
+{
+  "project": {
+    "name": "Projeto Metro SP",
+    "description": "Projeto de exemplo para integração BIM + YOLO",
+    "version": "1.0"
+  },
+  "elements": {
+    "walls": [
+      {
+        "id": "wall_1",
+        "name": "Parede Norte",
+        "type": "IfcWall",
+        "geometry": {
+          "start": [100, 100, 0],
+          "end": [400, 100, 0],
+          "height": 3,
+          "thickness": 0.2
+        },
+        "expected_position": [250, 100],
+        "properties": {
+          "material": "Concreto",
+          "fire_rating": "2h"
+        }
+      },
+      {
+        "id": "wall_2", 
+        "name": "Parede Leste",
+        "type": "IfcWall",
+        "geometry": {
+          "start": [400, 100, 0],
+          "end": [400, 300, 0],
+          "height": 3,
+          "thickness": 0.2
+        },
+        "expected_position": [400, 200],
+        "properties": {
+          "material": "Concreto",
+          "fire_rating": "2h"
+        }
+      },
+      {
+        "id": "wall_3",
+        "name": "Parede Sul", 
+        "type": "IfcWall",
+        "geometry": {
+          "start": [400, 300, 0],
+          "end": [100, 300, 0],
+          "height": 3,
+          "thickness": 0.2
+        },
+        "expected_position": [250, 300],
+        "properties": {
+          "material": "Concreto",
+          "fire_rating": "2h"
+        }
+      },
+      {
+        "id": "wall_4",
+        "name": "Parede Oeste",
+        "type": "IfcWall", 
+        "geometry": {
+          "start": [100, 300, 0],
+          "end": [100, 100, 0],
+          "height": 3,
+          "thickness": 0.2
+        },
+        "expected_position": [100, 200],
+        "properties": {
+          "material": "Concreto",
+          "fire_rating": "2h"
+        }
+      }
+    ],
+    "beams": [
+      {
+        "id": "beam_1",
+        "name": "Viga Norte",
+        "type": "IfcBeam",
+        "geometry": {
+          "start": [150, 150, 3],
+          "end": [350, 150, 3],
+          "width": 0.3,
+          "height": 0.4
+        },
+        "expected_position": [250, 150],
+        "properties": {
+          "material": "Aço",
+          "load_capacity": "50 kN/m"
+        }
+      },
+      {
+        "id": "beam_2",
+        "name": "Viga Central",
+        "type": "IfcBeam",
+        "geometry": {
+          "start": [150, 200, 3],
+          "end": [350, 200, 3],
+          "width": 0.3,
+          "height": 0.4
+        },
+        "expected_position": [250, 200],
+        "properties": {
+          "material": "Aço",
+          "load_capacity": "50 kN/m"
+        }
+      },
+      {
+        "id": "beam_3",
+        "name": "Viga Sul",
+        "type": "IfcBeam",
+        "geometry": {
+          "start": [150, 250, 3],
+          "end": [350, 250, 3],
+          "width": 0.3,
+          "height": 0.4
+        },
+        "expected_position": [250, 250],
+        "properties": {
+          "material": "Aço",
+          "load_capacity": "50 kN/m"
+        }
+      }
+    ],
+    "columns": [
+      {
+        "id": "column_1",
+        "name": "Pilar 1",
+        "type": "IfcColumn",
+        "geometry": {
+          "position": [120, 120, 0],
+          "height": 3,
+          "width": 0.3,
+          "depth": 0.3
+        },
+        "expected_position": [120, 120],
+        "properties": {
+          "material": "Concreto",
+          "load_capacity": "500 kN"
+        }
+      },
+      {
+        "id": "column_2",
+        "name": "Pilar 2", 
+        "type": "IfcColumn",
+        "geometry": {
+          "position": [380, 120, 0],
+          "height": 3,
+          "width": 0.3,
+          "depth": 0.3
+        },
+        "expected_position": [380, 120],
+        "properties": {
+          "material": "Concreto",
+          "load_capacity": "500 kN"
+        }
+      },
+      {
+        "id": "column_3",
+        "name": "Pilar 3",
+        "type": "IfcColumn", 
+        "geometry": {
+          "position": [380, 280, 0],
+          "height": 3,
+          "width": 0.3,
+          "depth": 0.3
+        },
+        "expected_position": [380, 280],
+        "properties": {
+          "material": "Concreto",
+          "load_capacity": "500 kN"
+        }
+      },
+      {
+        "id": "column_4",
+        "name": "Pilar 4",
+        "type": "IfcColumn",
+        "geometry": {
+          "position": [120, 280, 0],
+          "height": 3,
+          "width": 0.3,
+          "depth": 0.3
+        },
+        "expected_position": [120, 280],
+        "properties": {
+          "material": "Concreto",
+          "load_capacity": "500 kN"
+        }
+      }
+    ]
+  }
+}
